@@ -6,8 +6,8 @@ import theme from "./theme/Theme.jsx";
 // Layout components
 import Header       from "./components/Header";
 import Footer       from "./components/Footer";
-import AIChatButton from "./components/Chat.jsx";
-import ScrollTop    from "./components/Scrolltop.jsx";
+import AIChatButton from "./components/Chat";
+import ScrollTop    from "./components/Scrolltop";
 
 // Page sections
 import Hero      from "./sections/Hero";
