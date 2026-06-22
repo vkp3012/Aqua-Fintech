@@ -90,17 +90,17 @@ export const ICON_MAP = { AccountBalance, TrendingUp, BarChart, Assessment, Shie
 // ── Pricing packages ─────────────────────────────────────────────────────────
 export const PACKAGES = [
   {
-    name: "Basic", price: "₹4,999", period: "/month",
+    name: "Basic", price: "₹####", period: "/month",
     color: "#1A3C8F", highlight: false,
     features: ["Comprehensive Bookkeeping", "Bank Reconciliation", "GST & TDS Filing", "Monthly P&L & Balance Sheet", "Compliance Calendar", "Email Support"],
   },
   {
-    name: "Advanced", price: "₹12,999", period: "/month",
+    name: "Advanced", price: "₹####", period: "/month",
     color: "#F47B20", highlight: true,
     features: ["Everything in Basic", "Automated Reconciliation", "ROC & Payroll Compliance", "Monthly MIS Reports", "Finance Review Meeting", "Priority Support"],
   },
   {
-    name: "Premium", price: "₹24,999", period: "/month",
+    name: "Premium", price: "₹####", period: "/month",
     color: "#8B5CF6", highlight: false,
     features: ["Everything in Advanced", "Virtual CFO Services", "Real-time Dashboards", "Compliance Audits", "Strategic Planning", "Dedicated CFO Manager"],
   },
@@ -128,7 +128,7 @@ You help potential and existing clients understand the company's services, prici
 Company Overview:
 - Full name: Aqua Aarisis Finance & Business Consulting
 - Tagline: "Your All Finance Team in One Place"
-- Contact: ckaarisis@gmail.com | +91 6376980718
+- Contact: ckaarisis@gmail.com | +91 0000000000
 
 Core Services:
 1. Virtual Accounting & Compliance: Bookkeeping, GST, TDS, ROC, Payroll, Income Tax Filing

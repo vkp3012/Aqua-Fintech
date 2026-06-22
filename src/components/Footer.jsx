@@ -27,12 +27,6 @@ export default function Footer({ onSectionClick }) {
               >
                 Get Free Consultation
               </Button>
-              <Button
-                variant="outlined" size="large" href="tel:+916376980718"
-                sx={{ color: "#fff", borderColor: "rgba(255,255,255,0.5)", px: 4, "&:hover": { borderColor: "#fff", background: "rgba(255,255,255,0.1)" } }}
-              >
-                Call +91 6376980718
-              </Button>
             </Stack>
           </Box>
         </Container>
