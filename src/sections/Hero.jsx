@@ -20,7 +20,7 @@ export default function Hero({ onSectionClick }) {
       }}
     >
       {/* Decorative rings */}
-      {[300, 500, 700].map((s, i) => (
+      {[400, 500, 700].map((s, i) => (
         <Box
           key={i}
           sx={{
@@ -34,7 +34,7 @@ export default function Hero({ onSectionClick }) {
       ))}
 
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
-        <Grid container spacing={6} alignItems="center">
+        <Grid container spacing={25} alignItems="center">
 
           {/* ── Left: Text ── */}
           <Grid item xs={12} md={6}>
@@ -48,7 +48,7 @@ export default function Hero({ onSectionClick }) {
                 }}
               />
               <Typography
-                variant="h1"
+                variant="h2"
                 sx={{ fontSize: { xs: "2.2rem", md: "3.2rem" }, color: "#fff", lineHeight: 1.15 }}
               >
                 Your Complete<br />
@@ -81,25 +81,11 @@ export default function Hero({ onSectionClick }) {
                   Explore Services
                 </Button>
               </Stack>
-
-              {/* Stats */}
-              <Stack direction="row" spacing={3} flexWrap="wrap" useFlexGap mt={2}>
-                {STATS.map((s) => (
-                  <Box key={s.label}>
-                    <Typography sx={{ color: "#F47B20", fontFamily: '"Syne",sans-serif', fontWeight: 800, fontSize: "1.4rem" }}>
-                      {s.value}
-                    </Typography>
-                    <Typography sx={{ color: "rgba(255,255,255,0.6)", fontSize: "0.7rem" }}>
-                      {s.label}
-                    </Typography>
-                  </Box>
-                ))}
-              </Stack>
             </Stack>
           </Grid>
 
           {/* ── Right: Chart card ── */}
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={7}>
             <Box sx={{
               background: "rgba(255,255,255,0.04)",
               border: "1px solid rgba(255,255,255,0.1)",

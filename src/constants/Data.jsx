@@ -3,7 +3,7 @@ import {
 } from "@mui/icons-material";
 
 // ── Navigation ──────────────────────────────────────────────────────────────
-export const NAV_LINKS = ["Services", "About", "Dashboard", "Pricing", "Contact"];
+export const NAV_LINKS = ["Services", "About", "Dashboard", "Pricing", "Contact","Resourses", "Tools"];
 
 // ── Stats ───────────────────────────────────────────────────────────────────
 export const STATS = [

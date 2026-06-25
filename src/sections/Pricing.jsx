@@ -4,22 +4,22 @@ import { PACKAGES } from "../constants/Data";
 
 export default function Pricing({ onSectionClick }) {
   return (
-    <Box id="pricing" sx={{ py: { xs: 6, md: 10 }, bgcolor: "#fff" }}>
-      <Container maxWidth="lg">
+    <Box id="pricing" sx={{ py: { xs: 1, md: 10 }, bgcolor: "#fff" }}>
+      <Container maxWidth="lg" mb={4}>
 
         {/* Heading */}
-        <Box textAlign="center" mb={7}>
+        <Box textAlign="center" mb={4}>
           <Chip label="Pricing Plans" sx={{ bgcolor: "#FFF4EC", color: "#F47B20", mb: 2, fontWeight: 600, fontSize: "0.75rem" }} />
           <Typography variant="h2" sx={{ fontSize: { xs: "1.8rem", md: "2.4rem" }, color: "#0D1B3E", mb: 1.5 }}>
             Scalable & Flexible Plans
           </Typography>
-          <Typography sx={{ color: "#5A6A85", maxWidth: 480, mx: "auto", fontSize: "0.95rem" }}>
+          <Typography sx={{ color: "#5A6A85", maxWidth: 640, fontSize: "0.95rem" }}>
             Choose services that fit your current stage — upgrade or adjust as your business grows.
           </Typography>
         </Box>
 
         {/* Cards */}
-        <Grid container spacing={3} justifyContent="center">
+        <Grid container spacing={7} justifyContent="center">
           {PACKAGES.map((pkg) => (
             <Grid item xs={12} sm={6} md={4} key={pkg.name}>
               <Box sx={{
@@ -40,14 +40,6 @@ export default function Pricing({ onSectionClick }) {
                 <Typography sx={{ fontFamily: '"Syne",sans-serif', fontWeight: 700, fontSize: "1.1rem", color: pkg.highlight ? "#fff" : "#0D1B3E", mb: 0.5 }}>
                   {pkg.name}
                 </Typography>
-                <Stack direction="row" alignItems="baseline" spacing={0.5} mb={2}>
-                  <Typography sx={{ fontFamily: '"Syne",sans-serif', fontWeight: 800, fontSize: "2rem", color: pkg.color }}>
-                    {pkg.price}
-                  </Typography>
-                  <Typography sx={{ fontSize: "0.8rem", color: pkg.highlight ? "rgba(255,255,255,0.6)" : "#5A6A85" }}>
-                    {pkg.period}
-                  </Typography>
-                </Stack>
 
                 <Divider sx={{ borderColor: pkg.highlight ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.06)", mb: 2 }} />
 
